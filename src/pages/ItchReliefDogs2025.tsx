@@ -391,7 +391,7 @@ const ItchReliefDogs2025 = () => {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-8 items-start">
                   <div className="flex flex-col items-center justify-center bg-[#EAF2FF] rounded-xl border border-[#C7D5F2] p-6 md:p-8 min-h-[200px] md:min-h-[260px]">
                     <img
-                      src="https://m.media-amazon.com/images/I/81TsubHEjKL._AC_SL1500_.jpg"
+                      src="/81TsubHEjKL._AC_SL1500_-removebg-preview.png"
                       alt="TheraPet Cat Calming Diffuser Kit - box, diffuser unit and pheromone refill bottles"
                       className="w-full max-w-[220px] h-auto object-contain"
                     />
@@ -498,7 +498,7 @@ const ItchReliefDogs2025 = () => {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-8 items-start">
                   <div className="flex flex-col items-center justify-center bg-[#EAF2FF] rounded-xl border border-[#C7D5F2] p-6 md:p-8 min-h-[200px] md:min-h-[260px]">
                     <img
-                      src="https://m.media-amazon.com/images/I/81iaJN-eo1L._AC_SL1500_.jpg"
+                      src="/81iaJN-eo1L._AC_SL1500_-removebg-preview.png"
                       alt="Relaxivet Calming Pheromone Diffuser Kit"
                       className="w-full max-w-[220px] h-auto object-contain"
                     />
@@ -842,7 +842,7 @@ const ItchReliefDogs2025 = () => {
                     <div className="flex flex-col items-center justify-center flex-shrink-0 w-full md:w-auto">
                       <div className="bg-[#EAF2FF] rounded-xl border border-[#C7D5F2] p-4 md:p-6 w-40 h-40 md:w-48 md:h-48 flex flex-col items-center justify-center mb-4 overflow-hidden">
                         <img
-                          src="https://m.media-amazon.com/images/I/81TsubHEjKL._AC_SL1500_.jpg"
+                          src="/81TsubHEjKL._AC_SL1500_-removebg-preview.png"
                           alt="TheraPet Cat Calming Diffuser Kit"
                           className="w-full h-full object-contain"
                         />
