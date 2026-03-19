@@ -15,7 +15,7 @@ const Features = () => {
           <p className="about-section-intro">
             Our articles are sourced from content writers with a passion for cats and include advice
             and insights from feline behaviour specialists and veterinary professionals. We work
-            hard to deliver up-to-date advice and products to help best support your cat. From
+            hard to deliver up-to-date advice and products to support your cat. From
             stress and anxiety to multi-cat household management, we offer our readers an inside look
             into extensive knowledge to boost your cat&apos;s wellbeing.
           </p>

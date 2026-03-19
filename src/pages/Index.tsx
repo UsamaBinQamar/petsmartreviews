@@ -12,7 +12,7 @@ const Index = () => {
       <div className="pt-24 pb-2 text-center bg-[#EDF5FF] border-b border-[#cce0f5]">
         <div className="container mx-auto px-5 md:px-6">
           <Link to="/article/itch-relief-dogs-2025" className="text-[#316DFF] font-semibold underline hover:no-underline">
-          Itch Relief for Dogs 2025
+          Cat Calming Diffusers: 5 Options Compared (2026)
           </Link>
         </div>
       </div>

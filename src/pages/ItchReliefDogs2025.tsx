@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
@@ -49,8 +50,7 @@ const AMAZON_LINKS = {
 } as const;
 
 /**
- * Combined page: The Best 5 Cat Calming Diffusers in 2026
- * All sections from the provided screenshots and copy in one page.
+ * Cat calming diffusers roundup: 5 vet-reviewed options compared for spraying, stress, and territorial behaviour.
  */
 const ItchReliefDogs2025 = () => {
   const [isDisclosureOpen, setIsDisclosureOpen] = useState(false);
@@ -136,12 +136,12 @@ const ItchReliefDogs2025 = () => {
           </p>
           {/* Main Title */}
           <h1 className="text-[28px] md:text-5xl lg:text-6xl font-bold leading-tight mb-3 md:mb-6" style={{ color: "#0b1324", fontFamily: 'Satoshi, sans-serif', fontWeight: 800 }}>
-            The Best 5 Cat Calming Diffusers in 2026
+            5 Cat Calming Diffusers Compared (2026)
           </h1>
 
           {/* Subtitle */}
           <h4 className="text-[14px] md:text-base text-[#222] leading-relaxed mb-4 md:mb-8 font-normal max-w-md md:max-w-3xl mx-auto" style={{ fontFamily: 'Satoshi, sans-serif' }}>
-            Discover the most effective products to stop your cat from spraying, scratching, stress &amp; more!
+            Compare pheromone diffusers that can help with spraying, scratching, stress, and territorial behaviour — with pros, cons, and what to look for.
           </h4>
 
           {/* Skip To Navigation */}
@@ -155,7 +155,7 @@ const ItchReliefDogs2025 = () => {
                 className="inline-flex items-center px-4 md:px-5 py-2 rounded-full border border-[#C7D5F2] bg-[#EAF2FF] text-[#0b1324] text-sm md:text-base font-semibold hover:bg-[#DDE9FF] transition-colors shadow-none"
                 style={{ fontFamily: 'Satoshi, sans-serif' }}
               >
-                Top 5
+                Comparison
               </a>
             </li>
             <li>
@@ -226,7 +226,7 @@ const ItchReliefDogs2025 = () => {
                   The dangers of letting your cat spray and scratch unabated are numerous. Besides the fact that stress behaviours are very disruptive for your household, they can also cause secondary health issues, since <strong>their stress forms a vital part of the problem, since it directly weakens your cat&apos;s immune system.</strong>
                 </p>
                 <p>
-                  Luckily, many spraying or stress behaviours can be helped by using a <strong>high-quality pheromone diffuser.</strong> Read on to discover our Top 5 Cat Calming Diffusers.
+                  Many spraying or stress behaviours can be supported by a <strong>pheromone diffuser</strong> that uses evidence-backed ingredients. For more on how they work, see our guide on <Link to="/article/pheromone-diffusers-cats" className="text-[#316DFF] font-semibold underline hover:no-underline">whether pheromone diffusers really work for cats</Link>. Below we compare five cat calming diffusers.
                 </p>
               </div>
             </section>
@@ -237,7 +237,7 @@ const ItchReliefDogs2025 = () => {
                 Symptoms of a Stressed or Territorial Cat
               </h2>
               <p className="mb-6 text-base md:text-lg leading-relaxed text-[#222]">
-                There are lots of ways to tell if your cat has stress and territorial problems. Look out for:
+                Stress and territorial issues can show up in several ways. For more on causes and solutions, read <Link to="/article/why-cat-sprays" className="text-[#316DFF] font-semibold underline hover:no-underline">why your cat sprays and how to address it</Link>. Common signs to look for:
               </p>
               <div className="grid grid-cols-1 md:grid-cols-[1fr_auto] gap-6 md:gap-8 items-start">
                 <ul className="grid grid-cols-1 md:grid-cols-2 gap-3 list-disc pl-6 text-base md:text-lg leading-relaxed space-y-2 text-[#222]">
@@ -310,7 +310,7 @@ const ItchReliefDogs2025 = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12">
                 {[
                   { name: "Dual Pheromone Formula", desc: "Choose diffusers which provide both the Feline Facial Pheromone and the Maternal Appeasing Pheromone." },
-                  { name: "Odour-Free Formula", desc: "The best diffusers are completely odourless to humans and will not cause any unpleasant smells in your home." },
+                  { name: "Odour-Free Formula", desc: "Quality diffusers are odourless to humans and do not add noticeable scent to your home." },
                   { name: "60-Day Supply Per Kit", desc: "Look for kits that include at least 60 days of coverage to reduce cost and the need to reorder frequently." },
                   { name: "Money-Back Guarantee", desc: "Brands with a 30 day money back guarantee commonly have higher quality products and lower risk." },
                 ].map((item) => (
@@ -350,7 +350,7 @@ const ItchReliefDogs2025 = () => {
                 </summary>
                 <div className="mt-5 space-y-6">
                   {[
-                    { title: "Dual Pheromone Technology", desc: "Feline Facial & Maternal Appeasing pheromones are the most effective combination that has been shown to reduce spraying & calm the cat." },
+                    { title: "Dual Pheromone Technology", desc: "Feline Facial and Maternal Appeasing pheromones are an evidence-backed combination shown to support reduced spraying and calmer behaviour." },
                     { title: "Money Back Guarantee", desc: "Brands with a 30 day money back guarantee commonly have higher quality products and lower risk." },
                     { title: "Vet-Recommended Formula", desc: "Look for diffusers that are reviewed and recommended by credentialed veterinary professionals, such as DVMs and RVTs which can bring further credibility." },
                     { title: "US-Based Company", desc: "We recommend companies headquartered and operating in the USA to ensure your product meets the highest safety and quality standards." },
@@ -372,12 +372,11 @@ const ItchReliefDogs2025 = () => {
 
 
 
-          {/* Section: Top 5 Cat Calming Diffusers */}
+          {/* Section: 5 Cat Calming Diffusers Compared */}
           <section id="top5" className="mt-12 w-full">
             <div className="w-full px-3 md:px-6 lg:px-8">
-              {/* How We Evaluated the Top 5 */}
               <h2 className="text-xl md:text-2xl font-bold text-[#0b1324] mb-4 text-center" style={{ fontFamily: 'Satoshi, sans-serif' }}>
-                How We Evaluated the Top 5
+                How We Evaluated These Diffusers
               </h2>
               <div className="flex flex-wrap justify-center gap-3 md:gap-6 mb-8">
                 {["Effectiveness", "Ingredients", "Value for Money", "Customer Service"].map((label) => (
@@ -393,7 +392,7 @@ const ItchReliefDogs2025 = () => {
               </div>
 
               <h2 className="text-2xl md:text-3xl font-bold text-[#0b1324] leading-tight mb-6 text-center" style={{ fontFamily: 'Satoshi, sans-serif' }}>
-                Top 5 Cat Calming Diffusers of 2026
+                5 Cat Calming Diffusers Compared
               </h2>
 
               {/* Product Card: #1 TheraPet */}
@@ -467,7 +466,7 @@ const ItchReliefDogs2025 = () => {
                   <h4 className="text-lg font-bold text-black mb-4" style={{ fontFamily: 'Satoshi, sans-serif' }}>The Bottom Line</h4>
                   <div className="space-y-4 text-base leading-relaxed text-[#222]" style={{ fontFamily: 'Satoshi, sans-serif' }}>
                     <p>
-                      Of all cat calming diffusers that we tested on the market, TheraPet&apos;s Vet-Recommended Cat Calming Diffuser Kit is the clear winner.
+                      Among the cat calming diffusers we evaluated, TheraPet&apos;s Vet-Recommended Cat Calming Diffuser Kit was our top-rated pick.
                     </p>
                     <p>
                       With a powerful combination of 2 pheromones, Feline Facial and Maternal Appeasing, this diffuser contains a potent dose of highly beneficial signals and has shown superior efficacy for cat owners looking to solve a range of stress behaviours. By using multiple types of calming pheromones, TheraPet&apos;s Cat Calming Diffuser Kit comes with a wider range of benefits than competing products.
@@ -485,7 +484,7 @@ const ItchReliefDogs2025 = () => {
                       TheraPet is a <strong>US-Based Company, Headquartered and Operated in the USA</strong> and comes with a <strong>30 Day Money Back Guarantee + Bundle Discount</strong>. This helps ensure the safety and accuracy of their formula and allows cat owners to try them risk-free.
                     </p>
                     <p>
-                      Overall, we have rated TheraPet as having the <strong>best cat calming diffuser on the market in 2026</strong> from all those that we tested.
+                      In this roundup we rate TheraPet as our <strong>top cat calming diffuser</strong> among the options we tested.
                     </p>
                   </div>
                 </div>
@@ -852,17 +851,17 @@ const ItchReliefDogs2025 = () => {
 
               <div className="text-center mb-6">
                 <a href="#top5" className="text-sm md:text-base font-semibold text-[#316DFF] underline" style={{ fontFamily: 'Satoshi, sans-serif' }}>
-                  Skip To Top 5
+                  Back to comparison
                 </a>
               </div>
 
               {/* Our Recommendation Section */}
               <div className="bg-[#EDF5FF] rounded-xl p-6 md:p-8 mt-12">
                 <h2 className="text-xl md:text-2xl font-bold text-[#666] mb-2 text-center" style={{ fontFamily: 'Satoshi, sans-serif' }}>
-                  Our Recommendation
+                  Our top-rated pick
                 </h2>
                 <h3 className="text-2xl md:text-3xl font-bold text-[#0b1324] mb-8 text-center" style={{ fontFamily: 'Satoshi, sans-serif' }}>
-                  Top Cat Calming Diffuser of 2026
+                  Cat Calming Diffuser we recommend
                 </h3>
                 <div className="bg-white rounded-xl border-2 border-[#4D6DD7] p-6 md:p-8">
                   <div className="flex flex-col md:flex-row items-center gap-6 md:gap-8 mb-6">
@@ -896,7 +895,7 @@ const ItchReliefDogs2025 = () => {
                   </div>
 
                   <p className="text-base md:text-lg leading-relaxed text-[#222] mb-6" style={{ fontFamily: 'Satoshi, sans-serif' }}>
-                    Overall, <strong>TheraPet&apos;s Cat Calming Diffuser Kit</strong> provides the best bang for your buck. With science-backed pheromones which have been thoroughly-researched, they also come with a money-back guarantee and bundle discount. We highly recommend these to support a wide range of stress and territorial behaviours or for long term prevention.
+                    <strong>TheraPet&apos;s Cat Calming Diffuser Kit</strong> offers strong value: a dual-pheromone, vet-recommended formula with a money-back guarantee and bundle discount. We recommend it for stress-related spraying, <Link to="/article/reduce-cat-fighting" className="text-[#316DFF] font-semibold underline hover:no-underline">reducing cat fighting</Link>, and <Link to="/article/multi-cat-calm" className="text-[#316DFF] font-semibold underline hover:no-underline">calmer multi-cat households</Link>.
                   </p>
                   <div className="text-center mb-8">
                     <a
