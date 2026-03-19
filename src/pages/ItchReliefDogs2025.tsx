@@ -38,6 +38,16 @@ const BadgeCheckIcon = ({ className = "h-7 w-7", strokeWidth = 2 }: { className?
   </svg>
 );
 
+/** Amazon product links for each brand (update with actual URLs as needed) */
+const AMAZON_LINKS = {
+  therapet:
+    "https://www.amazon.com/TherapetMD-2-Pack-120-Days-Calming-Diffuser/dp/B0G26F743G/ref=sr_1_1?dib=eyJ2IjoiMSJ9.9G2zrbX_sBCjWo30d7s-T7PQ_-rPDwHc52QYnCFFf-wgOPwzr9rYmd3DKeB-4DK1I2fEQ1rfsvmCMIwbhVhOB4xIeOXa1hyvu4tc0XiaMVDcy3soqywEP5Q2IiyuEbBxapebA1IorVuzT4mTIWNtsY2PElVe01-sC3wad5_5ewWqFLFC3c_XezGnzVLDC6kDmvMmqtwuQSHDBu4n3uN7UK6pqLx_Xiyj1whgswhgAkQAmvj0Ny6eznfrNocQxEytQo3hGnyXcSDWhFCnOtFa70WZerMCNKKr-2MFX1ORqm4.NkK_7cgVidhTXKb3PFs-Ef4ZwtFLrDb08vss5kwCLjk&dib_tag=se&keywords=therapet%2Bcat&qid=1773761718&sr=8-1&th=1",
+  relaxivet: "#",
+  zenpaws: "#",
+  trioak: "#",
+  bserene: "#",
+} as const;
+
 /**
  * Combined page: The Best 5 Cat Calming Diffusers in 2026
  * All sections from the provided screenshots and copy in one page.
@@ -187,13 +197,20 @@ const ItchReliefDogs2025 = () => {
           <div className="bg-white rounded-xl p-6 md:p-8 space-y-8 text-[#222]" style={{ fontFamily: 'Satoshi, sans-serif' }}>
             <p className="text-sm text-[#666]">Updated on 24/02/2026</p>
 
-            <div className="flex items-center gap-3 mb-6">
-              <div className="w-10 h-10 rounded bg-[#EAF2FF] flex items-center justify-center text-[#0b1324] font-bold text-sm shrink-0" style={{ fontFamily: 'Satoshi, sans-serif' }}>
-                SARAH M.
+            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-5 mb-6">
+              <img
+                src="/895012e4-c327-4fd0-b4f3-dcf9c95b7ada.jpeg"
+                alt="Sarah M. — Pet health and behaviour expert"
+                className="w-16 h-16 md:w-20 md:h-20 rounded-full object-cover flex-shrink-0 border-2 border-[#E5ECF4] shadow-sm"
+              />
+              <div className="min-w-0">
+                <p className="text-sm font-bold text-[#0b1324] mb-1" style={{ fontFamily: 'Satoshi, sans-serif' }}>
+                  SARAH M.
+                </p>
+                <p className="text-sm text-[#222] leading-relaxed" style={{ fontFamily: 'Satoshi, sans-serif' }}>
+                  Sarah is our resident pet health and behaviour expert who recently retired from a 14-year career in veterinary teaching to pursue writing and researching.
+                </p>
               </div>
-              <p className="text-sm text-[#222] leading-relaxed" style={{ fontFamily: 'Satoshi, sans-serif' }}>
-                Sarah is our resident pet health and behaviour expert who recently retired from a 14-year career in veterinary teaching to pursue writing and researching.
-              </p>
             </div>
 
             {/* Section: The Importance of Stopping Your Cat From Spraying & Stress Behaviours */}
@@ -390,11 +407,13 @@ const ItchReliefDogs2025 = () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-8 items-start">
                   <div className="flex flex-col items-center justify-center bg-[#EAF2FF] rounded-xl border border-[#C7D5F2] p-6 md:p-8 min-h-[200px] md:min-h-[260px]">
-                    <img
-                      src="/81TsubHEjKL._AC_SL1500_-removebg-preview.png"
-                      alt="TheraPet Cat Calming Diffuser Kit - box, diffuser unit and pheromone refill bottles"
-                      className="w-full max-w-[220px] h-auto object-contain"
-                    />
+                    <a href={AMAZON_LINKS.therapet} target="_blank" rel="noopener noreferrer" className="block">
+                      <img
+                        src="https://m.media-amazon.com/images/I/81TsubHEjKL._AC_SL1500_.jpg"
+                        alt="TheraPet Cat Calming Diffuser Kit - box, diffuser unit and pheromone refill bottles"
+                        className="w-full max-w-[220px] h-auto object-contain"
+                      />
+                    </a>
                     <p className="text-center text-[#0b1324] font-semibold text-sm mt-3" style={{ fontFamily: 'Satoshi, sans-serif' }}>TheraPet Cat Calming Diffuser Kit</p>
                   </div>
 
@@ -497,11 +516,13 @@ const ItchReliefDogs2025 = () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-8 items-start">
                   <div className="flex flex-col items-center justify-center bg-[#EAF2FF] rounded-xl border border-[#C7D5F2] p-6 md:p-8 min-h-[200px] md:min-h-[260px]">
-                    <img
-                      src="/81iaJN-eo1L._AC_SL1500_-removebg-preview.png"
-                      alt="Relaxivet Calming Pheromone Diffuser Kit"
-                      className="w-full max-w-[220px] h-auto object-contain"
-                    />
+                    <a href={AMAZON_LINKS.relaxivet} target="_blank" rel="noopener noreferrer" className="block">
+                      <img
+                        src="https://m.media-amazon.com/images/I/81iaJN-eo1L._AC_SL1500_.jpg"
+                        alt="Relaxivet Calming Pheromone Diffuser Kit"
+                        className="w-full max-w-[220px] h-auto object-contain"
+                      />
+                    </a>
                     <p className="text-center text-[#0b1324] font-semibold text-sm mt-3" style={{ fontFamily: 'Satoshi, sans-serif' }}>Relaxivet Diffuser Kit</p>
                   </div>
 
@@ -590,11 +611,13 @@ const ItchReliefDogs2025 = () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-8 items-start">
                   <div className="flex flex-col items-center justify-center bg-[#EAF2FF] rounded-xl border border-[#C7D5F2] p-6 md:p-8 min-h-[200px] md:min-h-[260px]">
-                    <img
-                      src="https://m.media-amazon.com/images/I/714tVoYgE0L._SL1500_.jpg"
-                      alt="Zenpaws Cat Calming Pheromone Diffuser"
-                      className="w-full max-w-[220px] h-auto object-contain"
-                    />
+                    <a href={AMAZON_LINKS.zenpaws} target="_blank" rel="noopener noreferrer" className="block">
+                      <img
+                        src="https://m.media-amazon.com/images/I/714tVoYgE0L._SL1500_.jpg"
+                        alt="Zenpaws Cat Calming Pheromone Diffuser"
+                        className="w-full max-w-[220px] h-auto object-contain"
+                      />
+                    </a>
                     <p className="text-center text-[#0b1324] font-semibold text-sm mt-3" style={{ fontFamily: 'Satoshi, sans-serif' }}>Zenpaws Cat Diffuser</p>
                   </div>
 
@@ -670,11 +693,13 @@ const ItchReliefDogs2025 = () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-8 items-start">
                   <div className="flex flex-col items-center justify-center bg-[#EAF2FF] rounded-xl border border-[#C7D5F2] p-6 md:p-8 min-h-[200px] md:min-h-[260px]">
-                    <img
-                      src="https://m.media-amazon.com/images/I/71WZfMshldL._AC_SL1500_.jpg"
-                      alt="TriOak Cat Pheromones Calming Diffuser"
-                      className="w-full max-w-[220px] h-auto object-contain"
-                    />
+                    <a href={AMAZON_LINKS.trioak} target="_blank" rel="noopener noreferrer" className="block">
+                      <img
+                        src="https://m.media-amazon.com/images/I/71WZfMshldL._AC_SL1500_.jpg"
+                        alt="TriOak Cat Pheromones Calming Diffuser"
+                        className="w-full max-w-[220px] h-auto object-contain"
+                      />
+                    </a>
                     <p className="text-center text-[#0b1324] font-semibold text-sm mt-3" style={{ fontFamily: 'Satoshi, sans-serif' }}>TriOak Cat Diffuser</p>
                   </div>
 
@@ -754,11 +779,13 @@ const ItchReliefDogs2025 = () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-8 items-start">
                   <div className="flex flex-col items-center justify-center bg-[#EAF2FF] rounded-xl border border-[#C7D5F2] p-6 md:p-8 min-h-[200px] md:min-h-[260px]">
-                    <img
-                      src="https://m.media-amazon.com/images/I/61NSvjyNqQL._AC_SL1080_.jpg"
-                      alt="bSerene Advanced Pheromone Calming Diffuser"
-                      className="w-full max-w-[220px] h-auto object-contain"
-                    />
+                    <a href={AMAZON_LINKS.bserene} target="_blank" rel="noopener noreferrer" className="block">
+                      <img
+                        src="https://m.media-amazon.com/images/I/61NSvjyNqQL._AC_SL1080_.jpg"
+                        alt="bSerene Advanced Pheromone Calming Diffuser"
+                        className="w-full max-w-[220px] h-auto object-contain"
+                      />
+                    </a>
                     <p className="text-center text-[#0b1324] font-semibold text-sm mt-3" style={{ fontFamily: 'Satoshi, sans-serif' }}>bSerene Cat Diffuser</p>
                   </div>
 
@@ -841,11 +868,13 @@ const ItchReliefDogs2025 = () => {
                   <div className="flex flex-col md:flex-row items-center gap-6 md:gap-8 mb-6">
                     <div className="flex flex-col items-center justify-center flex-shrink-0 w-full md:w-auto">
                       <div className="bg-[#EAF2FF] rounded-xl border border-[#C7D5F2] p-4 md:p-6 w-40 h-40 md:w-48 md:h-48 flex flex-col items-center justify-center mb-4 overflow-hidden">
-                        <img
-                          src="/81TsubHEjKL._AC_SL1500_-removebg-preview.png"
-                          alt="TheraPet Cat Calming Diffuser Kit"
-                          className="w-full h-full object-contain"
-                        />
+                        <a href={AMAZON_LINKS.therapet} target="_blank" rel="noopener noreferrer" className="block w-full h-full flex items-center justify-center">
+                          <img
+                            src="https://m.media-amazon.com/images/I/81TsubHEjKL._AC_SL1500_.jpg"
+                            alt="TheraPet Cat Calming Diffuser Kit"
+                            className="w-full h-full object-contain"
+                          />
+                        </a>
                       </div>
                       <h4 className="text-lg font-bold text-[#0b1324] text-center md:text-left" style={{ fontFamily: 'Satoshi, sans-serif' }}>
                         Cat Calming Diffuser Kit by TheraPet
@@ -871,7 +900,9 @@ const ItchReliefDogs2025 = () => {
                   </p>
                   <div className="text-center mb-8">
                     <a
-                      href="#"
+                      href={AMAZON_LINKS.therapet}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="inline-block px-10 py-4 bg-[#0b1324] text-white font-bold text-lg rounded-lg hover:opacity-90 transition-opacity"
                       style={{ fontFamily: 'Satoshi, sans-serif' }}
                     >
